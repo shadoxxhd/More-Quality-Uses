@@ -20,6 +20,7 @@ local on_built = function (data)
         force = entity.force,
         fast_replace = true,
         player = entity.last_user,
+        orientation = entity.orientation
     }
     entity.destroy()
     surface.create_entity(info)
